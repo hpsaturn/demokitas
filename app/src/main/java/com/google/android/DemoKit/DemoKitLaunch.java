@@ -15,7 +15,9 @@ public class DemoKitLaunch extends Activity {
 		int maxExtent = Math.max(display.getWidth(), display.getHeight());
 
 		Intent intent;
-		if (maxExtent > 1200) {
+
+		boolean tabletSize = activity.getResources().getBoolean(R.bool.isTablet);
+		if (tabletSize) {
 			Log.i(TAG, "starting tablet ui");
 			intent = new Intent(activity, DemoKitTablet.class);
 		} else {

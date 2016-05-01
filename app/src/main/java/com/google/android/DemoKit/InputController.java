@@ -47,7 +47,7 @@ public class InputController extends AccessoryController {
 		 * mV/degC (typical) for the MCP9700/9700A and 19.5 mV/degC (typical)
          * for the MCP9701/9701A. The out- put voltage at 0 degC is also scaled
          * to 500 mV (typical) and 400 mV (typical) for the MCP9700/9700A and
-		 * MCP9701/9701A, respectively. VOUT = TC¥TA+V0degC
+		 * MCP9701/9701A, respectively. VOUT = TCTA+V0degC
 		 */
 		double kVoltageAtZeroCmv = 400;
 		double kTemperatureCoefficientmvperC = 19.5;
